@@ -1,10 +1,8 @@
-# THE TECH TRIANGLE
+---
+sidebar_label: "Hi!"
+sidebar_position: 2
+---
 
-A website for all the know hows and hack of the cs world
+# Hello
 
-## How to contribute:
-
-1. Add yourself as the author in authors.yml by refering to the format mentioned.
-2.
-
-`
+This is my **first Docusaurus document**!
