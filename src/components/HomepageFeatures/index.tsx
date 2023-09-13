@@ -68,3 +68,23 @@ export default function HomepageFeatures(): JSX.Element {
     </section>
   );
 }
+function swap(arr: { [x: string]: any }, i: string, j: string) {
+  const tmp = arr[i];
+  arr[i] = arr[j];
+  arr[j] = tmp;
+}
+function reverse(arr: any, i: any, j: any) {
+  for (let start = i, end = j; start < end; start++, end--) {
+    swap(arr, start, end);
+  }
+}
+
+function reverse1(arr, i, j) {
+  let start = i,
+    end = j;
+  while (start < end) {
+    swap(arr, start, end);
+    start++;
+    end--;
+  }
+}
