@@ -19,7 +19,7 @@ function HomepageHeader() {
             className="button button--secondary button--lg"
             to="https://www.thetechtriangle.com/blog/welcome"
           >
-            Contribution Guide - Read Me First 📖
+            Contribution Guide 📖
           </Link>
         </div>
       </div>
