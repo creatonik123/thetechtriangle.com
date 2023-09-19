@@ -10,34 +10,31 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: "Easy to Use",
+    title: "Easy to contribute",
     Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Tech Triangle website is designed in a way that you can add any of your
+        blog posts, events, or projects to the website. We will make a document
+        out of your blogs if we feel it is appropriate for some topic. You can
+        also add your projects to the website.
       </>
     ),
   },
   {
-    title: "Focus on What Matters",
+    title: "Always Open Source",
     Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        This website intends to be open source, so that knowledge should be
+        accessible to all.
       </>
     ),
   },
   {
     title: "Powered by React",
     Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
-    ),
+    description: <>Extend or customize your blog layout by reusing React.</>,
   },
 ];
 
@@ -67,24 +64,4 @@ export default function HomepageFeatures(): JSX.Element {
       </div>
     </section>
   );
-}
-function swap(arr: { [x: string]: any }, i: string, j: string) {
-  const tmp = arr[i];
-  arr[i] = arr[j];
-  arr[j] = tmp;
-}
-function reverse(arr: any, i: any, j: any) {
-  for (let start = i, end = j; start < end; start++, end--) {
-    swap(arr, start, end);
-  }
-}
-
-function reverse1(arr, i, j) {
-  let start = i,
-    end = j;
-  while (start < end) {
-    swap(arr, start, end);
-    start++;
-    end--;
-  }
 }
